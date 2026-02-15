@@ -22,16 +22,35 @@ export default function CommentsForm() {
         <div>
             <h4>Write a Comment!</h4>
             <form onSubmit={handleSubmit}>
-                <label>Username: </label>
-                <input placeholder="username" type="text" value={formData.username} onChange={handleInputChange}/>
+                <label htmlFor="username">Username: </label>
+                <input 
+                    placeholder="username" 
+                    type="text" value={formData.username} 
+                    onChange={handleInputChange} 
+                    id="username"
+                    name="username"
+                />
                 <br></br><br></br>
 
-                <label>Remarks: </label>
-                <textarea value={formData.remarks} placeholder="add remarks" onChange={handleInputChange}></textarea>
+                <label htmlFor="remarks">Remarks: </label>
+                <textarea 
+                    value={formData.remarks} 
+                    placeholder="add remarks" 
+                    onChange={handleInputChange} 
+                    id="remarks"
+                    name="remarks">
+                </textarea>
                 <br></br><br></br>
 
-                <label>Rating: </label>
-                <input placeholder="rating" type="number" min={1} max={5} value={formData.rating} onChange={handleInputChange}/>
+                <label htmlFor="rating">Rating: </label>
+                <input 
+                    placeholder="rating" 
+                    type="number" min={1} max={5} 
+                    value={formData.rating} 
+                    onChange={handleInputChange} 
+                    id="rating"
+                    name="rating"
+                />
                 <br></br><br></br>
                 <button>Add Comment</button>
             </form>
