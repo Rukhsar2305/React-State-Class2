@@ -1,11 +1,10 @@
 import './App.css'
-import CommentsForm from './CommentsForm'
-import Comment from './Comment'
+import Counter from './counter'
 
 function App() {
   return (
     <>
-      <Comment/>
+      <Counter/>
     </>
   )
 }
